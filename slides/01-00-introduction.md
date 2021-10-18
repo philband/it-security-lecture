@@ -54,7 +54,7 @@
 
 [![height:100px](../oer_logo.png)](https://www.oercommons.org/courses/university-lecture-on-it-security
 "OER Global Logo, 2012 J. Mello, used under CC-BY 3.0 License")
-![height:100px](../cc_by-sa_4.0.png)
+![height:100px](../cc_by-sa_4.0.svg)
 
 ---
 
