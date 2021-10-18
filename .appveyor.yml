@@ -27,7 +27,7 @@ test: off
 on_success:
   - 'git config --global credential.helper store'
   - ps: 'Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"'
-  - 'git config --global user.email "philipp.alexander-moritz-bandow@nordakademie.de"'
+  - 'git config --global user.email "philipp-alexander-moritz.bandow@nordakademie.de"'
   - 'git config --global user.name "Philipp Bandow"'
   - 'git checkout %APPVEYOR_REPO_BRANCH%'
   - 'git add ./slides/pdf/*.pdf'
