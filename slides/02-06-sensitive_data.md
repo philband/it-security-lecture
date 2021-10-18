@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Sensitive Data
 
@@ -242,4 +242,3 @@ and
 5. Solve the steganography challenge (:star::star::star::star:)
 6. Solve the non-existent challenge \#999
    (:star::star::star::star::star::star:)
-

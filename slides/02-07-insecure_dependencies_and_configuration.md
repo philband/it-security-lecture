@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Insecure Dependencies
 
@@ -367,4 +367,3 @@ possible._
    [typosquatting](https://en.wikipedia.org/wiki/Typosquatting)
    dependencies that the Juice Shop fell for (:star::star::star::star: -
    :star::star::star::star::star:)
-

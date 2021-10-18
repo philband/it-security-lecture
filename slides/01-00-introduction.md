@@ -1,44 +1,37 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # IT Security
 
 ## Information & Network Security
 
-###### by Bjoern Kimminich
+###### by Philipp Bandow
+
+###### original slides by Bjoern Kimminich
 
 ---
 
-# Bjoern Kimminich
+# Philipp Bandow
 
-* [Nordakademie](https://www.nordakademie.de/) Graduate (I99a)
-* <small>Product Group Lead Architecture Governance + Application
-  Security</small> at [Kuehne + Nagel](http://kuehne-nagel.com/)
-* Lecturer at [Nordakademie](https://www.nordakademie.de/) since 2009
-* Volunteer in the
-  [Open Web Application Security Project](https://owasp.org/)
-* Board Member of the
-  [German OWASP Chapter](https://owasp.org/www-chapter-germany/)
-* Project Lead of the [OWASP Juice Shop](https://owasp-juice.shop)
-* [OWASP Project Committee](https://owasp.org/www-committee-project/) Chair
+- Master Student IT-Security at [FH Wedel](https://fh-wedel.de)
+- B. Sc. Computer Engineering from [UAS Hamburg](https://www.haw-hamburg.de/)
+- Lecturer at [Nordakademie](https://www.nordakademie.de/) since 2021
+- Working student in DevSecOps
 
 ---
-
-![bg left:45%](https://pbs.twimg.com/profile_images/1269649524039004161/thpWClK9_400x400.jpg)
 
 # Contact Information
 
 #### Email
 
-* <bjoern.kimminich@nordakademie.de>
-  * PGP:
-    [062A 85A8 CBFB DCDA](https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda)
+- <phlipp-alexander-moritz.bandow@nordakademie.de>
 
 #### Miscellaneous
 
-* <https://keybase.io/bkimminich>
-* <https://twitter.com/bkimminich>
+- Threema: [AS7PA49H](https://threema.id/AS7PA49H)
+- Keybase: [philban](https://keybase.io/philban)
+- Github: <https://github.com/philband>
 
 ---
 
@@ -57,7 +50,7 @@
 
 # Course Material
 
-#### <https://github.com/bkimminich/it-security-lecture>
+#### <https://github.com/philband/it-security-lecture>
 
 [![height:100px](../oer_logo.png)](https://www.oercommons.org/courses/university-lecture-on-it-security
 "OER Global Logo, 2012 J. Mello, used under CC-BY 3.0 License")
@@ -73,7 +66,7 @@
 * Content exists as `Markdown` files for use with
   [Marp](https://yhatt.github.io/marp/)
 * Slides can be
-  [downloaded as PDF](https://github.com/bkimminich/it-security-lecture/tree/master/slides/pdf)
+  [downloaded as PDF](https://github.com/philband/it-security-lecture/tree/philband/slides/pdf)
   from GitHub
 * All slides are published as
   [OER](http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/open-educational-resources/)
@@ -132,8 +125,8 @@ the entire course in advance as content might change during the course!_
 
 # Schedule
 
-* **Fridays, 14:30 - 17:15**
-* 9 lectures (22.10. - 17.12.21)
+* **Tuesdays, 13:30 - 16:00**
+* 10 lectures (19.10. - 21.12.20)
 * 100% online lecture
 
 #### Test Exam
@@ -167,4 +160,3 @@ the entire course in advance as content might change during the course!_
 | <small>[Gestaltung von Informationssystemen](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=687&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=4fdfc7d45f77fbab6762fc9b21d25113)</small>    | <small>S3+4</small> | <small>[Softwarequalitaet](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=686&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=f0a18932b5c53b961d5ffd82ec93a828)</small>                | <small>S4</small>   |
 | <small>[IT-Organisation und Projektmanagement](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=365&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=0972188cffd7c1f82712f2a3bcf1402d)</small>  | <small>S3+4</small> | <small>[Software Engineering](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=896&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=a9814d05a115dad8d83d1c6460c8bc7f)</small>             | <small>S5+6</small> |
 | <small>[Informatik und Gesellschaft](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=691&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=51eac57861fcb436d696b15cfb5365a3)</small>            | <small>S1</small>   | <small>[Internet Anwendungsarchitekturen](https://www.nordakademie.de/bewerber/studienangebote/angewandte-informatik-bsc/studienplan/?tx_nacurriculum_nacurriculum%5Bid%5D=363&tx_nacurriculum_nacurriculum%5Bdate%5D=&tx_nacurriculum_nacurriculum%5Baction%5D=show&tx_nacurriculum_nacurriculum%5Bcontroller%5D=Studienplan&cHash=6b8564b01760a85bd3946ebec3a1cae1)</small> | <small>S5+6</small> |
-

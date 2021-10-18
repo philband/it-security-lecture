@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # XXE
 
@@ -309,7 +309,7 @@ The `node-serialize` module uses `eval()` internally for
 deserialization, allowing exploits like
 
 ```javascript
-var serialize = require('node-serialize');                                                               
+var serialize = require('node-serialize');
 var x = '{"rce":"_$$ND_FUNC$$_function (){console.log(\'exploited\')}()"}'
 serialize.unserialize(x);
 ```

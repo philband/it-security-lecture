@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Penetration Testing
 
@@ -185,7 +185,7 @@ conducted to various audiences.</small>
 
 ---
 
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Awesome Penetration Testing
 
@@ -323,4 +323,3 @@ Acknowledgements: https://hackerone.com/ed/thanks
 #### https://googleprojectzero.blogspot.com/
 
 [^4]: https://en.wikipedia.org/wiki/Project_Zero
-

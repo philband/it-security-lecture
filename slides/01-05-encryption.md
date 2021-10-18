@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Encryption
 
@@ -74,11 +74,10 @@ the presentation as the final slide._
 
 # Timeline
 
-* Tue, 17.11.2020 _(today)_
+* Tue, 16.11.2021 _(today)_
   * Group building & topic assignment
-* Sun, 06.12.2020 _(+3 weeks)_
+* Sun, 05.12.2021 _(+3 weeks)_
   * All PDF-exported presentations delivered to
     <bjoern.kimminich@nordakademie.de>
-* **Tue, 08.12.2020** _(+2 days)_
+* **Tue, 07.12.2021** _(+2 days)_
   * **All groups present their topics** between 09:15 and 11:45
-

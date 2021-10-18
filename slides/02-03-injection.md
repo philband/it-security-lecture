@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Injection
 
@@ -271,4 +271,3 @@ used for the _User Reviews_ of products in the Juice Shop.
    (:star::star::star::star:)
 2. Update multiple product reviews at the same time
    (:star::star::star::star:)
-

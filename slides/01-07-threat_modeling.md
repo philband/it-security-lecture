@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Threat Modeling
 
@@ -146,7 +146,7 @@
 
 ---
 
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Exercise 7.1 (:pushpin:)
 
@@ -364,4 +364,3 @@ with threat boundaries when setting up the game._
    model) to bjoern.kimminich@nordakademie.de
 5. _(Optional)_ Use a PGP encrypted (:closed_lock_with_key:) and signed
    (:lock_with_ink_pen:) email in step 4!
-

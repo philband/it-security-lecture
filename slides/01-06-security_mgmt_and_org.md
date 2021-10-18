@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Security Management & Organization
 
@@ -469,4 +469,3 @@ will be largely based on OWASP resources._
 2. Check if your employer's industry is affected by BSI-Kritis at all
 3. Calculate (or estimate) if your employer is above or below the
    defined threshold for BSI-Kritis for your industry
-

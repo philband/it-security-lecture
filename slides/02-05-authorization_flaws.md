@@ -1,6 +1,6 @@
 <!-- theme: default -->
 <!-- paginate: true -->
-<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) -->
+<!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
 # Authorization Flaws
 
@@ -115,4 +115,3 @@ possible by tampering with the following URLs?
 1. Place an order with a negative total (:star::star::star:)
 2. Access one or more misplaced files (:star::star::star::star: -
    :star::star::star::star::star::star:)
-
