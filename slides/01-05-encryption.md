@@ -8,13 +8,13 @@
 
 # Exercise 5.1 (:handshake:/:pencil:/:house:)
 
-1. Split into working groups of 3 or 4 students
+1. Split into working groups of 5 or 6 students
 2. Each group is assigned one of the topics (by consensus or
    randomization) described on the following slides
 3. Every group prepares a digital presentation of 15-20min on their
    topic
-4. At least _2 days before_ the presentation a PDF export of their
-   slides is sent to <bjoern.kimminich@nordakademie.de>
+4. At least _2 days before_ the presentation a PDF export of the
+   slides is uploaded on Moodle (once per group)
 5. All groups present their topic to all their classmates who can ask
    questions afterwards
 
@@ -22,9 +22,9 @@
 
 # Presentation Format
 
-* 15-20min presentation
-  * _every_ group member _has to_ present for at least 5min
-* 5-10min Q&A
+* 15-20 minutes presentation
+  * _every_ group member _has to_ present for at least 3min
+* ~5 minutes Q&A
 
 _:information_source: The presentation can be written and held in :uk:
 or :de: based on each group's own preference. Just do not mix English
@@ -77,7 +77,6 @@ the presentation as the final slide._
 * Tue, 16.11.2021 _(today)_
   * Group building & topic assignment
 * Sun, 05.12.2021 _(+3 weeks)_
-  * All PDF-exported presentations delivered to
-    <bjoern.kimminich@nordakademie.de>
+  * All PDF-exported presentations uploaded on Moodle
 * **Tue, 07.12.2021** _(+2 days)_
-  * **All groups present their topics** between 09:15 and 11:45
+  * **All groups present their topics** between 13:30 and 16:00
