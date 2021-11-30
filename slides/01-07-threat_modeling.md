@@ -360,7 +360,5 @@ with threat boundaries when setting up the game._
    corresponding measures
 3. Go through the [_Did you do a decent job?_](#did-you-do-a-decent-job)
    list to verify your result is sufficiently detailed and up-to-date
-4. Scan or take a photo of your Score Card and send it (or your `JSON`
-   model) to bjoern.kimminich@nordakademie.de
-5. _(Optional)_ Use a PGP encrypted (:closed_lock_with_key:) and signed
-   (:lock_with_ink_pen:) email in step 4!
+4. Scan or take a photo of your Score Card and upload it (or your `JSON`
+   model) to Moodle.
