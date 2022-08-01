@@ -6,12 +6,12 @@
 
 ---
 
-# [Common Mistakes](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities)
+# [Common Mistakes](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/#description)
 
 * Not knowing used version of dependencies (client- and server-side)
   * Includes directly used components _and_ nested dependencies
 * **Used software is vulnerable, unsupported, or out of date**
-  * Includes OS, Web/Application server, DBMS, Applications, APIs,
+  * Includes OS, Web/Application server, DBMS, Applications, APIs, components,
     runtime environments and libraries
 * Lack of regular scans and bulletin subscriptions for vulnerabilities
 * **Patch Management Process insufficient** or missing
@@ -38,46 +38,50 @@ on exploiting known vulnerabilities in components (e.g.
 
 ---
 
-# Risk Rating
+# Data Factors
 
-## Using Components with Known Vulnerabilities
+## A06:2021 – Vulnerable and Outdated Components
 
-| Exploitability                 | Prevalence              | Detecability                   | Impact                          | Risk                                                                                                                      |
-|:-------------------------------|:------------------------|:-------------------------------|:--------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| :large_orange_diamond: Average | :red_circle: Widespread | :large_orange_diamond: Average | :large_orange_diamond: Moderate | [A9](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities) |
-| ( **2**                        | + **3**                 | + **2** ) / 3                  | * **2**                         | = **4.7**                                                                                                                 |
+<small><small>
 
----
+| <small>CWEs Mapped</small> | <small>Max Incidence Rate</small> | <small>Avg Incidence Rate</small> | <small>Avg Weighted Exploit</small> | <small>Avg Weighted Impact</small> | <small>Max Coverage</small> | <small>Avg Coverage</small> | <small>Total Occurrences</small> | <small>Total CVEs</small> |
+|:--------------------------:|:---------------------------------:|:---------------------------------:|:-----------------------------------:|:----------------------------------:|:---------------------------:|:---------------------------:|:--------------------------------:|:-------------------------:|
+|             3              |              27.96%               |               8.77%               |               51.78%                |               22.47%               |            5.00             |            5.00             |              30,457              |             0             |
 
-# [Prevention](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities)
-
-* **Remove unused dependencies**, unnecessary features, components,
-  files, and documentation
-* Continuously inventory component versions and sub-dependencies
-* **Continuously monitor**
-  [CVE](https://cve.mitre.org/)/[NVD](http://web.nvd.nist.gov/view/vuln/search)
-  etc. **for vulnerabilities**
-  * e.g. with OWASP Dependency-Check,
-    [Retire.js](https://retirejs.github.io/retire.js/) or
-    [`npm audit`](https://docs.npmjs.com/getting-started/running-a-security-audit)
-* Subscribe to email alerts for security vulnerabilities related to
-  components you use (especially when using commercial products)
-* **Only obtain components from official sources** over secure links
+</small></small>
 
 ---
 
-* Prefer signed packages to avoid including a modified, malicious
-  component
-* Monitor for unmaintained libraries and components
-* Monitor for components that do not create security patches for older
-  versions
-* If patching is not possible, consider deploying a virtual patch
-* **Ensure ongoing** monitoring, triaging, and applying **updates for
-  the lifetime of the application** or portfolio
+# [Prevention](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/#how-to-prevent)
 
-<!-- -->
+* **Removing unused dependencies, unnecessary features, components, files,
+    and documentation** :100:
+* **Continuously inventorying the versions of** both client-side and
+    server-side **components** (e.g., frameworks, libraries) **and their
+    dependencies** using tools like [OWASP Dependency Check](#owaspdependency-checkhttpsjeremylonggithubiodependencycheck),
+    [retire.js](https://retirejs.github.io/retire.js/), etc.
+* Continuously monitoring sources like Common Vulnerability and
+    Exposures (CVE) and National Vulnerability Database (NVD) for
+    vulnerabilities in the components
+* Using software composition analysis
+    tools to automate the process
+* Subscribing to email alerts for
+    security vulnerabilities related to components you use
 
-* **Define and enforce** the above in a **Patch Management Process**
+---
+
+* Obtain components from official sources over secure links only
+* Preferring signed packages to reduce the chance of including a modified,
+    malicious component (see [Software and Data Integrity Failures](02-08-integrity_failures.md)).
+* Monitor for libraries and components that are unmaintained or do not
+    create security patches for older versions
+* If patching is not
+    possible, deploying a virtual patch to monitor, detect, or
+    protect against the discovered issue is an option
+
+_:warning: Every organization must ensure an ongoing plan for monitoring, triaging,
+and applying updates or configuration changes for the lifetime of the
+application or portfolio._
 
 ---
 
@@ -132,7 +136,7 @@ files..._
 
 ---
 
-# [Common Mistakes](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)
+# [Common Mistakes](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/#description)
 
 * **Missing appropriate security hardening** across application stack
 * Improperly configured permissions on cloud services
@@ -161,14 +165,17 @@ Privilege Escalation._
 
 ---
 
-# Risk Rating
+# Data Factors
 
-## Security Misconfiguration
+## A05:2021 – Security Misconfiguration
 
-| Exploitability    | Prevalence              | Detecability      | Impact                          | Risk                                                                                                    |
-|:------------------|:------------------------|:------------------|:--------------------------------|:--------------------------------------------------------------------------------------------------------|
-| :red_circle: Easy | :red_circle: Widespread | :red_circle: Easy | :large_orange_diamond: Moderate | [A6](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration) |
-| ( **3**           | + **3**                 | + **3** ) / 3     | * **2**                         | = **6.0**                                                                                               |
+<small><small>
+
+| <small>CWEs Mapped</small> | <small>Max Incidence Rate</small> | <small>Avg Incidence Rate</small> | <small>Avg Weighted Exploit</small> | <small>Avg Weighted Impact</small> | <small>Max Coverage</small> | <small>Avg Coverage</small> | <small>Total Occurrences</small> | <small>Total CVEs</small> |
+|:--------------------------:|:---------------------------------:|:---------------------------------:|:-----------------------------------:|:----------------------------------:|:---------------------------:|:---------------------------:|:--------------------------------:|:-------------------------:|
+|             20             |              19.84%               |               4.51%               |                8.12                 |                6.56                |           89.58%            |           44.84%            |             208,387              |            789            |
+
+</small></small>
 
 ---
 
@@ -285,7 +292,7 @@ Small Business API subscription and higher._
 
 #### REST and Streaming API
 
-see **https://developer.shodan.io/api**
+see **<https://developer.shodan.io/api>**
 
 #### Literature Recommendations _(optional)_
 
@@ -296,7 +303,7 @@ see **https://developer.shodan.io/api**
 # Exercise 7.3
 
 1. Get an idea of the available Shodan query filters on
-   https://developer.shodan.io/api/banner-specification
+   <https://developer.shodan.io/api/banner-specification>
 2. Perform some Shodan searches for Internet-connected devices
    associated with your current employer (e.g. by `hostname` or `ip`)
 
@@ -310,17 +317,25 @@ in the public results" checkbox before running the online scan!_
 
 ---
 
-# [Prevention](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)
+# [Prevention](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/#how-to-prevent)
 
-* **Repeatable hardening process**
-* Development, QA & Production environments configured identically
-  * but with different credentials used in each environment
-* No unnecessary features, components, documentation, and samples
-* Segmented application architecture
-* Sending security directives to clients, e.g. Security Headers
-* **Regularly review and update configurations as part of the Patch
-  Management Process** (see
-  [Insecure Dependencies](#insecure-dependencies))
+* **Establishing a repeatable hardening process**
+* **Configuring development, QA, and production environments identically** (but with different credentials!)
+* Operating a minimal platform without any unnecessary features, components,
+    documentation, and samples
+* Removing or not installing unused features and frameworks
+* Reviewing and Updating the configurations appropriate to all
+    security notes, updates, and patches as part of the patch management
+    process (see [Insecure Dependencies](#insecure-dependencies))
+
+---
+
+* Use a segmented application architecture for effective and secure
+    separation between components or tenants, with segmentation,
+    containerization, or cloud security groups (ACLs)
+* Sending security directives to clients, e.g., Security Headers
+* Establishing an automated process to verify the effectiveness of the
+    configurations and settings in all environments
 
 ---
 
@@ -330,12 +345,6 @@ in the public results" checkbox before running the online scan!_
    (:star::star::star::star:)
 2. Report the vulnerability which makes this XSS possible
    (:star::star::star::star:)
-
-<!-- -->
-
-3. Report another vulnerability that could be exploited in a
-   [Software Supply Chain Attack](https://csrc.nist.gov/CSRC/media/Projects/Supply-Chain-Risk-Management/documents/ssca/2017-winter/NCSC_Placemat.pdf)
-   (:star::star::star::star::star:)
 
 _:information_source: To report anything to the shop, you can use the
 "Customer Feedback" page. You have to supply as detailed information as
@@ -352,18 +361,152 @@ possible._
 
 ---
 
-# Exercise 7.6 _(optional)_
+# XXE
 
-1. Read up on all vulnerabilities associated with JWT from the `npm
-   audit` of the Juice Shop's leaked `/ftp/package.json.bak`
-2. Forge an essentially unsigned JWT token
-   (:star::star::star::star::star:)
-3. Forge an almost properly RSA-signed JWT token
-   (:star::star::star::star::star::star:)
+## (XML External Entities)
+
+---
+
+# XML Entities
+
+* In the Document Type Definition (DTD) you specify shortcuts as
+  `ENTITY`...
+  * `<!ENTITY author "Bjoern Kimminich">`
+  * `<!ENTITY copyright "(C) 2018">`
+
+* ...to later dereference them in the XML
+  * `<author>&author; &copyright;</author>`
+
+---
+
+# External Entities
+
+* DTD changed to use External Entities...
+  * `<!ENTITY author SYSTEM
+      "https://raw.githubusercontent.com/juice-shop/juice-shop/gh-pages/entities.dtd">`
+  * `<!ENTITY copyright SYSTEM
+      "https://raw.githubusercontent.com/juice-shop/juice-shop/gh-pages/entities.dtd">`
+
+* ...whereas the XML stays the same
+  * `<author>&author; &copyright;</author>`
+
+---
+
+# [Attack Vector XXE](https://wiki.owasp.org/index.php/XML_External_Entity_(XXE)_Processing)
+
+* Many older or poorly configured XML processors evaluate external
+  entity references within XML documents
+
+* External entities can be abused for
+  * disclosure of internal files
+  * internal port scanning
+  * remote code execution
+  * denial of service attacks
+
+---
+
+# XML with Attack Payloads
+
+## Extracting Data
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <!DOCTYPE foo [
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+    <foo>&xxe;</foo>
+```
+
+---
+
+## Network Probing
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <!DOCTYPE foo [
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "https://192.168.1.1/private" >]>
+    <foo>&xxe;</foo>
+```
+
+## DoS Attack (against Linux-based Systems)
+
+```xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <!DOCTYPE foo [
+    <!ELEMENT foo ANY >
+    <!ENTITY xxe SYSTEM "file:///dev/random" >]>
+    <foo>&xxe;</foo>
+```
+
+---
+
+# Exercise 7.6
+
+1. Identify the weak point of the application that accepts arbitrary XML
+   data as input (:star::star:)
+2. Retrieve the content of your local system‘s `C:\Windows\system.ini`
+   (or `/etc/passwd` if you are using Linux) via an XXE attack
+   (:star::star::star:)
+
+---
+
+# [Prevention](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
+
+* **Configure XML parser to**
+  * **disable DTDs completely** (by disallowing `DOCTYPE` declarations)
+      :100:
+  * disable External Entities (only if allowing DTDs cannot be avoided)
+
+:x: Selective validation or escaping of tainted data is **not**
+sufficient, as the whole XML document is crafted by the attacker!
+
+---
+
+# [XML Parser Hardening Examples](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
+
+#### `libxml2` (C/C++)
+
+* `XML_PARSE_NOENT` and `XML_PARSE_DTDLOAD` must **not be defined** in
+  the Enum `xmlParserOption`.
+
+_:information_source: Starting with release `2.9` entity expansion is
+disabled by default. Using any older version makes it more likely to
+have XXE problems if the configuration was not explicitly hardened._
+
+---
+
+#### `org.dom4j.io.SAXReader` (Java)
+
+```java
+saxReader.setFeature(
+  "http://apache.org/xml/features/disallow-doctype-decl", true);
+saxReader.setFeature(
+  "http://xml.org/sax/features/external-general-entities", false);
+saxReader.setFeature(
+  "http://xml.org/sax/features/external-parameter-entities", false);
+```
+
+#### `java.beans.XMLDecoder` (Java)
+
+* The `readObject()` method in this class is fundamentally unsafe
+* It is vulnerable against XXE as well as arbitrary code execution
+* There is no way to make use of this class safe
+
+_:warning: Most Java XML parsers have insecure parser settings by
+default!_
+
+---
+
+# Exercise 7.7 _(optional)_
+
+1. Perform a DoS-like Attack using XXE (:star::star::star::star::star:)
 
 <!-- -->
 
-4. Report at least one of two
-   [typosquatting](https://en.wikipedia.org/wiki/Typosquatting)
-   dependencies that the Juice Shop fell for (:star::star::star::star: -
-   :star::star::star::star::star:)
+2. Read up on all vulnerabilities associated with JWT from the `npm
+   audit` of the Juice Shop's leaked `/ftp/package.json.bak`
+3. Forge an essentially unsigned JWT token
+   (:star::star::star::star::star:)
+4. Forge an almost properly RSA-signed JWT token
+   (:star::star::star::star::star::star:)

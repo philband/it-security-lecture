@@ -31,14 +31,17 @@
 
 ---
 
-# Risk Rating
+# Data Factors
 
-## Injection
+## A03:2021 – Injection
 
-| Exploitability    | Prevalence                    | Detecability      | Impact              | Risk                                                                                    |
-|:------------------|:------------------------------|:------------------|:--------------------|:----------------------------------------------------------------------------------------|
-| :red_circle: Easy | :large_orange_diamond: Common | :red_circle: Easy | :red_circle: Severe | [A1](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection) |
-| ( **3**           | + **2**                       | + **3** ) / 3     | * **3**             | = **8.0**                                                                               |
+<small><small>
+
+| <small>CWEs Mapped</small> | <small>Max Incidence Rate</small> | <small>Avg Incidence Rate</small> | <small>Avg Weighted Exploit</small> | <small>Avg Weighted Impact</small> | <small>Max Coverage</small> | <small>Avg Coverage</small> | <small>Total Occurrences</small> | <small>Total CVEs</small> |
+|:--------------------------:|:---------------------------------:|:---------------------------------:|:-----------------------------------:|:----------------------------------:|:---------------------------:|:---------------------------:|:--------------------------------:|:-------------------------:|
+|             33             |              19.09%               |               3.37%               |                7.25                 |                7.15                |           94.04%            |           47.90%            |             274,228              |          32,078           |
+
+</small></small>
 
 ---
 
@@ -100,14 +103,14 @@ String query = "SELECT id FROM users " +
 
 ###### Exercise 3.1
 
-| #  | Username   | Password       | Created SQL Query                                          | Query Result  |
-|:---|:-----------|:---------------|:-----------------------------------------------------------|:--------------|
-| 1  | `horst`    | `n0Rd4kAD3m!E` |                                                            | `42`          |
-| 2  | `'`        | `qwertz`       |                                                            |               |
-| 3  | `'--`      | `abc123`       |                                                            | nothing       |
-| 4  | `horst'--` | `qwertz`       |                                                            |               |
-| 5  |            |                | <small>`SELECT id FROM users WHERE name = 'admin'`</small> | `1`           |
-| 6  |            |                | `SELECT id FROM users`                                     | `1`, `2`, ... |
+| #   | Username   | Password                                     | Created SQL Query                                          | <small>Query Result</small> |
+|:----|:-----------|:---------------------------------------------|:-----------------------------------------------------------|:----------------------------|
+| 1   | `horst`    | <small><small>`n0Rd4kAD3m!E`</small></small> |                                                            | `42`                        |
+| 2   | `'`        | `qwertz`                                     |                                                            |                             |
+| 3   | `'--`      | `abc123`                                     |                                                            | nothing                     |
+| 4   | `horst'--` | `qwertz`                                     |                                                            |                             |
+| 5   |            |                                              | <small>`SELECT id FROM users WHERE name = 'admin'`</small> | `1`                         |
+| 6   |            |                                              | `SELECT id FROM users`                                     | `1`, `2`, ...               |
 
 <small>_:information_source: Valid options for Query Result are only
 numbers, nothing or an error._</small>
@@ -215,8 +218,8 @@ String query =
         "SELECT * FROM books " +
         "WHERE title LIKE '%" + req.getParameter("query") + "%'";
 
- 	Statement statement = connection.createStatement();
- 	ResultSet results = statement.executeQuery(query);
+  Statement statement = connection.createStatement();
+  ResultSet results = statement.executeQuery(query);
 ```
 
 ## :heavy_check_mark: Fixed Code Example

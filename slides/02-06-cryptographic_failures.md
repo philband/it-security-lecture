@@ -2,20 +2,20 @@
 <!-- paginate: true -->
 <!-- footer: Copyright (c) by **Bjoern Kimminich** | Licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | modified by **Philipp Bandow** -->
 
-# Sensitive Data
+# Cryptographic Failures
 
 ---
 
-# Sensitive Data
+# Protection needs of data
 
-> Sensitive data such as **passwords, credit card numbers, health
-> records, personal information and business secrets** require extra
-> protection, particularly if that data falls under privacy laws (EU's
-> General Data Protection Regulation GDPR), financial data protection
-> rules such as PCI Data Security Standard (PCI DSS) or other
-> regulations. \[[^1]\]
+> The first thing is to determine the protection needs of data in transit
+> and at rest. For example, passwords, credit card numbers, health
+> records, personal information, and business secrets require extra
+> protection, mainly if that data falls under privacy laws, e.g., EU's
+> General Data Protection Regulation (GDPR), or regulations, e.g.,
+> financial data protection such as PCI Data Security Standard (PCI DSS). \[[^1]\]
 
-[^1]: https://wiki.owasp.org/images/b/bc/OWASP_Top_10_Proactive_Controls_V3.pdf
+[^1]: https://owasp.org/Top10/A02_2021-Cryptographic_Failures/#description
 
 ---
 
@@ -85,42 +85,71 @@ _**§** Article 4(13), (14) and (15) and Article 9 and Recitals (51) to
 
 ---
 
-# [Sensitive Data Exposure](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure)
+# [Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures)
 
-* **Failure to determine the protection needs of data**
-* Transmitting data in clear text (e.g. HTTP, SMTP, FTP)
-* Employing old or weak cryptographic algorithms
-* Using default or weak generated crypto keys
-* Lack of proper key management/rotation
-* Not enforcing encryption through browser directives/HTTP headers
-* Lack of certificate verification
+* **Clear text data transmission** (e.g. HTTP, SMTP, FTP)
+* **Using old or weak cryptographic algorithms or protocols**
+* **Using default crypto keys or generate/re-use weak ones**
+* Lack of proper key management or rotation
+* Crypto keys are checked into source code repositories
+* No enforcement of encryption, e.g. missing security directives or headers
 
-_:warning: External Internet traffic is especially dangerous!_
-
----
-
-# Risk Rating
-
-## Sensitive Data Exposure
-
-| Exploitability                 | Prevalence              | Detecability                   | Impact              | Risk                                                                                                  |
-|:-------------------------------|:------------------------|:-------------------------------|:--------------------|:------------------------------------------------------------------------------------------------------|
-| :large_orange_diamond: Average | :red_circle: Widespread | :large_orange_diamond: Average | :red_circle: Severe | [A3](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure) |
-| ( **2**                        | + **3**                 | + **2** ) / 3                  | * **3**             | = **7.0**                                                                                             |
+_:information_source: External internet traffic is hazardous. Verify all internal traffic, e.g.,
+between load balancers, web servers, or back-end systems._
 
 ---
 
-# [Prevention](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure)
+* Insufficient certificate and trust chain validation
+* Ignoring, reusing or generating insecure initialization vectors for the cryptographic mode of operation
+* Using an insecure mode of operation such as ECB
+* Not using authenticated encryption when appropriate
+* Use passwords as cryptographic keys in absence of a password base key derivation function
+* Using insecure randomness functions or seed them weakly
+* Using deprecated (e.g. MD5 or SHA1) or [non-cryptographic hash functions](https://en.wikipedia.org/wiki/List_of_hash_functions#Non-cryptographic_hash_functions) or deprecated cryptographic padding methods (e.g. PKCS number 1 v1.5)
+* Allow cryptographic error messages or side channel information to become
+    exploitable, for example in the form of padding oracle attacks
 
-* **Classify data in system** and determine sensitivity level
-* **Don't store sensitive data unnecessarily**
-* Encrypt data at rest
-* Ensure up-to-date and strong
-  * Standard algorithms
-  * Protocols
-  * Keys
-* Encrypt data in transit (e.g. [TLS](01-05-encryption.md)) and enforce
-  encryption (e.g. HSTS)
+---
+
+# Data Factors
+
+## A02:2021 – Cryptographic Failures
+
+<small><small>
+
+| <small>CWEs Mapped</small> | <small>Max Incidence Rate</small> | <small>Avg Incidence Rate</small> | <small>Avg Weighted Exploit</small> | <small>Avg Weighted Impact</small> | <small>Max Coverage</small> | <small>Avg Coverage</small> | <small>Total Occurrences</small> | <small>Total CVEs</small> |
+|:--------------------------:|:---------------------------------:|:---------------------------------:|:-----------------------------------:|:----------------------------------:|:---------------------------:|:---------------------------:|:--------------------------------:|:-------------------------:|
+|             29             |              46.44%               |               4.49%               |                7.29                 |                6.81                |           79.33%            |           34.85%            |             233,788              |           3,075           |
+
+</small></small>
+
+---
+
+# [Prevention](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/#how-to-prevent)
+
+* **Classifying data** processed, stored, or transmitted by an application
+* **Identify sensitive data** according to privacy laws,
+    regulatory requirements, or business needs
+* **Not storing sensitive data unnecessarily and discarding it as soon as possible** :100:
+* **Encrypting all sensitive data** at rest
+* Ensuring up-to-date and strong standard algorithms, protocols, and
+    keys are in place while using proper key management
+
+---
+
+* **Encrypting all data in transit** with secure protocols (e.g. TLS with
+    [forward secrecy (FS)](#perfectforwardsecrecypfshttpswwwwiredcom201611what-is-perfect-forward-secrecy) ciphers), cipher prioritization by the
+    server, and secure parameters
+* Enforcing encryption with directives
+    like [HTTP Strict Transport Security (HSTS)](#httpstricttransportsecurityhstshttpscheatsheetseriesowasporgcheatsheetshttp_strict_transport_security_cheat_sheethtml)
+* No caching of responses that contain sensitive data
+* Applying required security controls as per the data classification
+* Not using legacy protocols (e.g. FTP and SMTP) for transporting
+    sensitive data
+* Storing passwords using strong adaptive and salted hashing functions
+    with a work factor (delay factor)
+* Verifying independently the effectiveness of configuration and
+    settings
 
 ---
 
@@ -217,14 +246,14 @@ and
 
 ### [Best Practices](https://wiki.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet#Architectural_Decision)
 
-| Scenario                                                                                                         | Practice                                  | :key: Length     |
-|:-----------------------------------------------------------------------------------------------------------------|:------------------------------------------|:-----------------|
-| Key exchange                                                                                                     | Diffie-Hellman                            | 2048+ bits       |
-| Message Integrity                                                                                                | HMAC-SHA2                                 | -                |
-| Message Hash                                                                                                     | SHA2                                      | 256 bits         |
-| [Asymetric encryption](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)    | **ECC** (Curve25519), RSA                 | 2048 bits (RSA)  |
-| [Symmetric-key algorithm](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html) | AES                                       | 128-**256** bits |
-| [Password Hashing](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)             | <small>**Bcrypt**, Argon2, PBKDF2</small> | -                |
+| Scenario                                                                                                         | Practice                     | :key: Length     |
+|:-----------------------------------------------------------------------------------------------------------------|:-----------------------------|:-----------------|
+| Key exchange                                                                                                     | Diffie-Hellman               | 2048+ bits       |
+| Message Integrity                                                                                                | HMAC-SHA2                    | -                |
+| Message Hash                                                                                                     | SHA2                         | 256 bits         |
+| [Asymetric encryption](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)    | **ECC** (Curve25519), RSA    | 2048 bits (RSA)  |
+| [Symmetric-key algorithm](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html) | AES                          | 128-**256** bits |
+| [Password Hashing](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)             | **Argon2id**, scrypt, PBKDF2 | -                |
 
 ---
 

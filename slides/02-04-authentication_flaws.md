@@ -6,7 +6,7 @@
 
 ---
 
-# :x: [Typical Flaws in Authentication](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication)
+# :x: [Typical Flaws in Authentication](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
 
 * Permits brute force or other automated attacks
 * Permits default, weak, or well-known passwords
@@ -20,14 +20,17 @@
 
 ---
 
-# Risk Rating
+# Data Factors
 
-## Broken Authentication
+## A07:2021 – Identification and Authentication Failures
 
-| Exploitability    | Prevalence                    | Detecability                   | Impact              | Risk                                                                                                |
-|:------------------|:------------------------------|:-------------------------------|:--------------------|:----------------------------------------------------------------------------------------------------|
-| :red_circle: Easy | :large_orange_diamond: Common | :large_orange_diamond: Average | :red_circle: Severe | [A2](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication) |
-| ( **3**           | + **2**                       | + **2** ) / 3                  | * **3**             | = **7.0**                                                                                           |
+<small><small>
+
+| <small>CWEs Mapped</small> | <small>Max Incidence Rate</small> | <small>Avg Incidence Rate</small> | <small>Avg Weighted Exploit</small> | <small>Avg Weighted Impact</small> | <small>Max Coverage</small> | <small>Avg Coverage</small> | <small>Total Occurrences</small> | <small>Total CVEs</small> |
+|:--------------------------:|:---------------------------------:|:---------------------------------:|:-----------------------------------:|:----------------------------------:|:---------------------------:|:---------------------------:|:--------------------------------:|:-------------------------:|
+|             22             |              14.84%               |               2.55%               |                7.40                 |                6.50                |           79.51%            |           45.72%            |             132,195              |           3,897           |
+
+</small></small>
 
 ---
 
@@ -99,14 +102,14 @@ _:warning: Do **not** use SQL Injection for authentication bypass!_
 #### [Secure Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
 
 * Use
-  [Bcrypt](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#modern-algorithms)
+  [Argon2id](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#argon2id)
   unless you have a good reason not to
 * Set a reasonable
   [work factor](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#work-factors)
-  for you system
+  for your system
 * Use a
   [salt](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#salting)
-  (modern algorithms do this for you automatically)
+  (modern algorithms like Argon2id, bcrypt and PBKDF2 do this for you automatically)
 * Consider using a
   [pepper](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#peppering)
   to provide an additional layer of security
@@ -204,18 +207,7 @@ do **not** hack Bjoern's actual Google account!_
 
 ---
 
-# Exercise 4.5 (:house:)
-
-![WebAuthn Logo](images/02-04-authentication_flaws/webauthn.svg)
-
-1. Read <https://webauthn.guide/> and play with <https://webauthn.io/>
-   to learn how WebAuthn works
-2. Prepare a convincing "sales pitch" (max. 5min) to convince your
-   classmates and co-workers to use WebAuthn for secure authentication
-
----
-
-# Exercise 4.6 (_optional_)
+# Exercise 4.5 (_optional_)
 
 1. Install a 2FA app on your phone (e.g.
    [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator)
