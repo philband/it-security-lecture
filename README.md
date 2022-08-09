@@ -33,22 +33,22 @@ material by [Björn Kimminich](http://kimminich.de)
 
 1. [Open Web Application Security Project](slides/02-01-owasp.md)
    (OWASP)
-2. [Cross-Site Scripting (XSS)](slides/02-02-xss.md)
-3. [Injection](slides/02-03-injection.md)
+2. [Injection](slides/02-02-injection.md)
+3. [Cross-Site Scripting (XSS)](slides/02-03-xss.md)
 4. [Authentication Flaws](slides/02-04-authentication_flaws.md)
 5. [Authorization Flaws](slides/02-05-authorization_flaws.md)
 6. [Sensitive Data](slides/02-06-sensitive_data.md)
 7. [Insecure Dependencies & Configuration](slides/02-07-insecure_dependencies_and_configuration.md)
-8. [XXE & Deserialization](slides/02-08-xxe_and_deserialization.md)
+8. [Integrity Failures](slides/02-08-integrity_failures.md)
 9. [Secure Development Lifecycle](slides/02-09-sdlc.md)
 
 ## Slide Edition Matrix
 
 | Branch                                                                        | Edition                          | Lessons | Duration (per lesson) | Interactivity                                    | Exercises                      | Homework              |
 |:------------------------------------------------------------------------------|:---------------------------------|:--------|:----------------------|:-------------------------------------------------|:-------------------------------|:----------------------|
-| [`master`](https://github.com/bkimminich/it-security-lecture)                 | IT Security Lecture              | 17      | ~150min               | :speech_balloon::speech_balloon::speech_balloon: | :computer::computer:           | :house::house:        |
-| [`webinar`](https://github.com/bkimminich/it-security-lecture/tree/webinar)   | Web Application Security Webinar | 9       | ~120min               | :speech_balloon:                                 | :computer:                     | :house::house::house: |
-| [`workshop`](https://github.com/bkimminich/it-security-lecture/tree/workshop) | Hands-on Hacking Workshop        | 4       | ~90min                | :speech_balloon::speech_balloon:                 | :computer::computer::computer: | :house:               |
+| [`master`](https://github.com/philband/it-security-lecture)                 | IT Security Lecture              | 17      | ~150min               | :speech_balloon::speech_balloon::speech_balloon: | :computer::computer:           | :house::house:        |
+| [`webinar`](https://github.com/philband/it-security-lecture/tree/webinar)   | Web Application Security Webinar | 9       | ~120min               | :speech_balloon:                                 | :computer:                     | :house::house::house: |
+| [`workshop`](https://github.com/philband/it-security-lecture/tree/workshop) | Hands-on Hacking Workshop        | 4       | ~90min                | :speech_balloon::speech_balloon:                 | :computer::computer::computer: | :house:               |
 
 ----
 
