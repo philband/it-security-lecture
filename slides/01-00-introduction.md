@@ -35,7 +35,7 @@
 
 ---
 
-# Exercise 0.1 (:pushpin:)
+<!--# Exercise 0.1 (:pushpin:)
 
 1. Write the industry you work in on a post-it and place it on the
    board. Cluster identical industries.
@@ -47,6 +47,7 @@
 | &nbsp;<br>&nbsp;       |                          |                          |                       |
 
 ---
+-->
 
 # Course Material
 
@@ -118,16 +119,17 @@ the entire course in advance as content might change during the course!_
 5. [Authorization Flaws](02-05-authorization_flaws.md)
 6. [Sensitive Data](02-06-sensitive_data.md)
 7. [Insecure Dependencies & Configuration](02-07-insecure_dependencies_and_configuration.md)
-8. [XXE & Deserialization](02-08-xxe_and_deserialization.md)
+8. [XXE & Deserialization](02-08-integrity_failures.md)
 9. [Secure Development Lifecycle](02-09-sdlc.md)
 
 ---
 
 # Schedule
 
-* **Tuesdays, 13:30 - 16:00**
-* 10 lectures (19.10. - 21.12.20)
-* 100% online lecture
+- **Tuesdays, 16:15 - 18:45**
+- 10 lectures (18.10. - 20.12.20)
+- 100% online lecture
+  - There will be 1-3 lectures on site in Elmshorn
 
 #### Test Exam
 
