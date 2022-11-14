@@ -8,7 +8,7 @@
 
 # Exercise 5.1 (:handshake:/:pencil:/:house:)
 
-1. Split into working groups of 5 or 6 students
+1. Split into working groups of 3 or 4 students
 2. Each group is assigned one of the topics (by consensus or
    randomization) described on the following slides
 3. Every group prepares a digital presentation of 15-20min on their
@@ -23,7 +23,7 @@
 # Presentation Format
 
 * 15-20 minutes presentation
-  * _every_ group member _has to_ present for at least 3min
+  * _every_ group member _has to_ present for at least 5min
 * ~5 minutes Q&A
 
 _:information_source: The presentation can be written and held in :uk:
@@ -74,9 +74,9 @@ the presentation as the final slide._
 
 # Timeline
 
-* Tue, 16.11.2021 _(today)_
+* Tue, 15.11.2021 _(today)_
   * Group building & topic assignment
-* Sun, 05.12.2021 _(+3 weeks)_
+* Sun, 04.12.2021 _(+3 weeks)_
   * All PDF-exported presentations uploaded on Moodle
-* **Tue, 07.12.2021** _(+2 days)_
-  * **All groups present their topics** between 13:30 and 16:00
+* **Tue, 06.12.2021** _(+2 days)_
+  * **All groups present their topics** between 15:00 and 17:30
