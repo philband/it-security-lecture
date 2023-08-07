@@ -28,16 +28,16 @@
 
 # Schedule
 
-* **Tuesdays, 14:00 - 16:30**
-* **Tuesdays, 14:00 - 17:15 starting from 13.09.22**
-* 8 lectures (02.08. - 27.09.22)
-* No lecture on 16.08.22
-* 100% via ZOOM (invite distributed via email/calendar)
+* **Tuesdays, 13:30 - 17:15**
+* **Tuesdays, 13:30 - 17:00 starting from 12.09.23**
+* 6 lectures (08.08. - 26.09.22)
+* No lectures on 15.08.23 and 22.08.23
+* Mostly on-site in Room F008, some lectures may be remote via Zoom
 
-#### Test Exam
+#### Exam
 
-* **04.10.2022** (90min)
-* **09:15 - 10:45** / Audimax
+* **09.10.2023** (90min)
+* **11:30 - 13:00** / Audimax
 * :warning: Covers topics from both semesters
 * :negative_squared_cross_mark: Adjourning the exam is discouraged
 
