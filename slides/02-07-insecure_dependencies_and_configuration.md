@@ -303,7 +303,7 @@ see **<https://developer.shodan.io/api>**
 # Exercise 7.3
 
 1. Get an idea of the available Shodan query filters on
-   <https://developer.shodan.io/api/banner-specification>
+   <https://datapedia.shodan.io>
 2. Perform some Shodan searches for Internet-connected devices
    associated with your current employer (e.g. by `hostname` or `ip`)
 
