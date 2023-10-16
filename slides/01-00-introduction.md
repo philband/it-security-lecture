@@ -126,10 +126,10 @@ the entire course in advance as content might change during the course!_
 
 # Schedule
 
-- **Tuesdays, 16:15 - 18:45**
-- 10 lectures (18.10. - 20.12.20)
-- 100% online lecture
-  - There will be 1-3 lectures on site in Elmshorn
+- **Tuesdays, 13:15 - 15:45**
+- 10 lectures (17.10. - 19.12.23)
+- On-Site depending on my availability
+  - Otherwise online via Teams
 
 #### Test Exam
 
